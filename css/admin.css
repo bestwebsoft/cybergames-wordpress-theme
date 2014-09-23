@@ -1,0 +1,74 @@
+/* Style the header image displayed on the Appearance > Header admin panel */
+/*@font-face {
+	font-family: "Montserrat";
+	src: url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.eot');
+	src: url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.svg#Montserrat') format('svg'),
+	url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.woff') format('woff'),
+	url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.eot');
+	src: url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+	url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.svg#Open Sans Light') format('svg'),
+	url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.woff') format('woff'),
+	url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@font-face {
+	font-family: "Montserrat";
+	src: url( ../fonts/Montserrat-Regular.eot );
+	src: url(../fonts/Montserrat-Regular.eot?#iefix ) format( 'embedded-opentype' ),
+	url( ../fonts/Montserrat-Regular.svg#Montserrat ) format( 'svg' ),
+	url( ../fonts/Montserrat-Regular.woff ) format( 'woff' ),
+	url( ../fonts/Montserrat-Regular.ttf ) format( 'truetype' );
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: url( ../fonts/OpenSans-Light.eot );
+	src: url( ../fonts/OpenSans-Light.eot?#iefix ) format( 'embedded-opentype' ),
+	url( ../fonts/OpenSans-Light.svg#Open Sans Light ) format( 'svg' ),
+	url( ../fonts/OpenSans-Light.woff ) format( 'woff' ),
+	url( ../fonts/OpenSans-Light.ttf ) format( 'truetype' );
+	font-weight: normal;
+	font-style: normal;
+}
+
+.site-title {
+	float: left;
+	width: 300px;
+	padding: 20px;
+}
+
+.site-title h1 {
+	margin: 30px 0 0 0;
+	font-family: "Montserrat";
+	font-size: 28px;
+	word-wrap: break-word;
+}
+
+.site-title h1 a{
+	 color: #fff;
+	 text-decoration: none;
+}
+
+.site-title p {
+	margin: 7px 0 0 0;
+	font-size: 15px;
+	opacity: 0.8;
+	font-family: "Open Sans Light";
+	word-wrap: break-word;
+}
+
+.clear {
+	clear: both;
+}
