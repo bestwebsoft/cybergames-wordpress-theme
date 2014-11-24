@@ -16,5 +16,5 @@ get_header(); ?>
 			</div><!--.post-->
 		</div><!--content-->
 	<?php get_sidebar(); ?>
-	</div>><!--content-main-->
+	</div><!--content-main-->
 <?php get_footer(); ?>

@@ -2,8 +2,8 @@
 Contributors: the BestWebSoft team
 Tags: gray, white, blue, right-sidebar, custom-background, sticky-post, custom-menu
 Requires at least: 3.7
-Tested up to: 3.9.2
-Stable tag: 1.7
+Tested up to: 4.0
+Stable tag: 1.8
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Theme CyberGames WordPress Theme, Copyright 2014 BestWebSoft.com
@@ -89,11 +89,16 @@ There is a background in the admin panel of your site, you can Change its color 
 
 == Changelog ==
 
+= V1.8 - 18.11.2014 =
+* New: BWS menu was added to the admin menu.
+* Update: We update theme internationalization.
+* Bugfix: Bugs in 404.php were fixed.
+
 = V1.7 - 18.08.2014 =
 * Update: We update theme files to WordPress 3.9.2.
-* Update: Page pagination was added. 
-* Update: Styles were updated. 
-* Bugfix: Bugs in function.php were fixed. 
+* Update: Page pagination was added.
+* Update: Styles were updated.
+* Bugfix: Bugs in function.php were fixed.
 * New: File admin.css was added.
 
 = V1.6 - 30.07.2014 =
@@ -118,6 +123,9 @@ There is a background in the admin panel of your site, you can Change its color 
 * Release date of CyberGames Theme
 
 == Upgrade Notice ==
+
+= V1.8 =
+BWS menu was added to the admin menu. Theme internationalization was updated. Bugs in 404.php were fixed.
 
 = V1.7 =
 Page pagination was added. Styles were updated. Bugs in function.php were fixed. File admin.css was added. We update theme files to WordPress 3.9.2.

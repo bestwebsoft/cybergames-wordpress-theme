@@ -1,0 +1,229 @@
+# This file is distributed under the GNU General Public License v1.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CyberGames\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-30 13:30+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
+"Language-Team: bestwebsoft.com <support@bestwebsoft.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: UKRAINE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../tag.php:9
+msgid "Recording tag:"
+msgstr ""
+
+#: ../tag.php:22
+#: ../page.php:15
+#: ../archive.php:35
+#: ../image.php:17
+#: ../index.php:28
+#: ../index.php:45
+#: ../search.php:22
+#: ../category.php:22
+#: ../single.php:19
+msgid "Posted on"
+msgstr ""
+
+#: ../tag.php:28
+#: ../page.php:20
+#: ../archive.php:40
+#: ../index.php:51
+#: ../category.php:27
+#: ../single.php:24
+msgid "Pages:"
+msgstr ""
+
+#: ../tag.php:31
+#: ../page.php:21
+#: ../archive.php:42
+#: ../index.php:56
+#: ../search.php:27
+#: ../category.php:29
+msgid "[Top]"
+msgstr ""
+
+#: ../tag.php:36
+#: ../archive.php:47
+#: ../index.php:62
+#: ../search.php:32
+#: ../category.php:34
+msgid "&larr; Older Posts"
+msgstr ""
+
+#: ../tag.php:37
+#: ../archive.php:48
+#: ../index.php:63
+#: ../search.php:33
+#: ../category.php:35
+msgid "Newer Posts &rarr;"
+msgstr ""
+
+#: ../page.php:16
+#: ../archive.php:36
+#: ../image.php:18
+#: ../index.php:29
+#: ../index.php:46
+#: ../search.php:23
+#: ../category.php:23
+#: ../single.php:20
+msgid "in"
+msgstr ""
+
+#: ../archive.php:17
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:19
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:21
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:23
+msgid "Archives"
+msgstr ""
+
+#: ../footer.php:10
+msgid "Powered by"
+msgstr ""
+
+#: ../footer.php:10
+msgid "and"
+msgstr ""
+
+#: ../image.php:20
+msgid "Return to"
+msgstr ""
+
+#: ../image.php:22
+#: ../functions.php:195
+msgid "(Edit)"
+msgstr ""
+
+#: ../image.php:55
+msgid "Next"
+msgstr ""
+
+#: ../image.php:56
+msgid "Previous"
+msgstr ""
+
+#: ../functions.php:60
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:68
+msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
+msgstr ""
+
+#: ../functions.php:101
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:104
+msgid "Untitled"
+msgstr ""
+
+#: ../functions.php:195
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:208
+msgid "Post author"
+msgstr ""
+
+#: ../functions.php:214
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:218
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:222
+msgid "Edit"
+msgstr ""
+
+#: ../functions.php:226
+msgid "Reply"
+msgstr ""
+
+#: ../functions.php:241
+msgid "Slider Post"
+msgstr ""
+
+#: ../functions.php:249
+msgid "Display this"
+msgstr ""
+
+#: ../functions.php:249
+msgid "in slider"
+msgstr ""
+
+#: ../searchform.php:10
+msgid "Enter search keyword"
+msgstr ""
+
+#: ../index.php:69
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr ""
+
+#: ../search.php:9
+msgid "Search results:"
+msgstr ""
+
+#: ../search.php:25
+msgid "more"
+msgstr ""
+
+#: ../search.php:37
+#: ../404.php:9
+msgid "Nothing found..."
+msgstr ""
+
+#: ../category.php:9
+msgid "Category pages: "
+msgstr ""
+
+#: ../comments.php:15
+msgid "One Thought on"
+msgstr ""
+
+#: ../comments.php:15
+msgid "thoughts on"
+msgstr ""
+
+#: ../comments.php:23
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:24
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:25
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:31
+msgid "Comments are closed."
+msgstr ""
+

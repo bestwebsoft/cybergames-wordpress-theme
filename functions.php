@@ -60,6 +60,21 @@ function cybergames_setup() {
 	register_nav_menu( 'primary', __( 'Primary Menu', 'cybergames' ) );
 }
 
+/* Function add menu pages */
+function cybergames_admin_menu() {
+	global $bws_theme_info;
+	if ( empty( $bws_theme_info ) ) {
+		if ( ( function_exists( 'wp_get_theme' ) ) ) {
+			$current_theme = wp_get_theme();
+			$current_theme_ver = $current_theme->get( 'Version' );
+		} else
+			$current_theme_ver = '';
+		$bws_theme_info = array( 'id' => '144', 'version' => $current_theme_ver );
+	}
+	require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
+	add_theme_page( 'BWS Themes', 'BWS Themes', 'edit_theme_options', 'bws_themes', 'bws_add_themes_menu_render' );
+}
+
 /*widget*/
 function cybergames_widgets_init() {
 	register_sidebar( array(
@@ -101,7 +116,7 @@ function cybergames_wp_title( $title, $sep ) {
 		$title = "$title $sep " . sprintf( __( 'Page %s', 'cybergames' ), max( $paged, $page ) );
 	}
 	if ( $title == '' ) {
-		return 'Untitled';
+		return __( 'Untitled', 'cybergames' );
 	} else {
 		return $title;
 	}
@@ -238,7 +253,7 @@ function cybergames_comment( $comment, $args, $depth ) {
 
 /*add meta_box*/
  function cybergames_add_metabox_for_slider() {
-	add_meta_box( 'metabox_slider_id', 'Slider Post', 'cybergames_metabox_callback', 'post', 'side' );
+	add_meta_box( 'metabox_slider_id', __( 'Slider Post', 'cybergames' ), 'cybergames_metabox_callback', 'post', 'side' );
 }
 
 /*callback function for meta box*/
@@ -309,6 +324,7 @@ function cybergames_slider_template() {
 
 /*hooks*/
 add_action( 'after_setup_theme', 'cybergames_setup' );
+add_action( 'admin_menu', 'cybergames_admin_menu' );
 add_action( 'widgets_init', 'cybergames_widgets_init' );
 add_action( 'wp_enqueue_scripts', 'cybergames_scripts' );
 add_action( 'save_post', 'cybergames_slidecaption_save' );
