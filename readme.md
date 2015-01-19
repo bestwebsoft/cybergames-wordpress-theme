@@ -5,12 +5,12 @@ If you are in search for a simple and flexible theme that would bring out the me
 
 <img src="http://bestwebsoft.com/wp-content/uploads/2014/09/cyber-games-wp-banner.jpg" />
 
-<a href="http://bestwebsoft.com/products/cybergames/" target=_blank>Description</a> | 
-<a href="http://bestwebsoft.com/products/cybergames/" target=_blank>Stats</a> | 
-<a href="http://bestwebsoft.com/products/cybergames/" target=_blank>Support</a> | 
-<a href="http://bestwebsoft.com/products/cybergames/" target=_blank>Reviews</a> | 
-<a href="http://bestwebsoft.com/products/cybergames/" target=_blank>Developers</a> | 
-<a href="http://bestwebsoft.com/products/cybergames/" target=_blank>Download</a>
+<a href="http://bestwebsoft.com/products/cybergames/description" target=_blank>Description</a> | 
+<a href="http://bestwebsoft.com/products/cybergames/installation" target=_blank>Installation</a> | 
+<a href="http://bestwebsoft.com/products/cybergames/faq" target=_blank>FAQ</a> | 
+<a href="http://bestwebsoft.com/products/cybergames/screenshots" target=_blank>Screenshots</a> | 
+<a href="http://bestwebsoft.com/products/cybergames/changelog" target=_blank>Changelog</a> | 
+<a href="http://bestwebsoft.com/products/cybergames/download" target=_blank>Download</a>
 
 
 Features 
