@@ -10,7 +10,7 @@ If you are in search for a simple and flexible theme that would bring out the me
 <a href="http://bestweblayout.com/products/cybergames/faq" target=_blank>FAQ</a> | 
 <a href="http://bestweblayout.com/products/cybergames/screenshots" target=_blank>Screenshots</a> | 
 <a href="http://bestweblayout.com/products/cybergames/changelog" target=_blank>Changelog</a> | 
-<a href="http://bestweblayout.com/products/products/cybergames/download" target=_blank>Download</a>
+<a href="http://bestweblayout.com/products/cybergames/download" target=_blank>Download</a>
 
 
 Features 
