@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  * The template for displaying 404 pages Nothing found...
  *
  * @subpackage CyberGames
@@ -17,4 +18,4 @@ get_header(); ?>
 		</div><!--content-->
 	<?php get_sidebar(); ?>
 	</div><!--content-main-->
-<?php get_footer(); ?>
+<?php get_footer();

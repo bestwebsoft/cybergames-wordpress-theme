@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  * The Header template
  *
  * @subpackage CyberGames
@@ -8,7 +9,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>"/>
 	<?php wp_head(); ?>
 </head>
@@ -19,7 +19,7 @@
 				<div class="site-title">
 					<h1 class="cybergames-site-title"><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 					<p><?php bloginfo( 'description' ); ?></p>
-				</div><!--.site-title-->			
+				</div><!--.site-title-->
 				<nav class="header-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</nav><!-- .header-menu -->

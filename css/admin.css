@@ -1,25 +1,4 @@
 /* Style the header image displayed on the Appearance > Header admin panel */
-/*@font-face {
-	font-family: "Montserrat";
-	src: url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.eot');
-	src: url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-	url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.svg#Montserrat') format('svg'),
-	url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.woff') format('woff'),
-	url('<?php echo get_template_directory_uri(); ?>/fonts/Montserrat-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Open Sans Light";
-	src: url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.eot');
-	src: url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-	url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.svg#Open Sans Light') format('svg'),
-	url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.woff') format('woff'),
-	url('<?php echo get_template_directory_uri(); ?>/fonts/OpenSans-Light.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}*/
 
 @font-face {
 	font-family: "Montserrat";
@@ -36,7 +15,7 @@
 	font-family: "Open Sans Light";
 	src: url( ../fonts/OpenSans-Light.eot );
 	src: url( ../fonts/OpenSans-Light.eot?#iefix ) format( 'embedded-opentype' ),
-	url( ../fonts/OpenSans-Light.svg#Open Sans Light ) format( 'svg' ),
+	url( ../fonts/OpenSans-Light.svg#OpenSans-Light ) format( 'svg' ),
 	url( ../fonts/OpenSans-Light.woff ) format( 'woff' ),
 	url( ../fonts/OpenSans-Light.ttf ) format( 'truetype' );
 	font-weight: normal;
@@ -51,7 +30,7 @@
 
 .site-title h1 {
 	margin: 30px 0 0 0;
-	font-family: "Montserrat";
+	font-family: "Montserrat", sans-serif;
 	font-size: 28px;
 	word-wrap: break-word;
 }
@@ -65,7 +44,7 @@
 	margin: 7px 0 0 0;
 	font-size: 15px;
 	opacity: 0.8;
-	font-family: "Open Sans Light";
+	font-family: "Open Sans Light", sans-serif;
 	word-wrap: break-word;
 }
 

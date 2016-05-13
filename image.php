@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  * The template  Category pages
  *
  * @subpackage CyberGames
@@ -6,8 +7,8 @@
  */
 get_header(); ?>
 	<div class="content">
-		<?php if( have_posts() ) :
-			while( have_posts() ) : the_post(); ?>
+		<?php if ( have_posts() ) :
+			while ( have_posts() ) : the_post(); ?>
 				<div <?php post_class() ?>>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<div class="post">
@@ -15,14 +16,17 @@ get_header(); ?>
 							<?php $metadata = wp_get_attachment_metadata(); ?>
 							<p class="category" >
 								<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
-								<?php if ( has_category() ) printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' ); the_category( ', ' ); ?>
+								<?php if ( has_category() ) {
+									printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
+									the_category( ', ' );
+								} ?>
 							</p>
 							<a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>" title="<?php _e( 'Return to', 'cybergames' ); echo ' ' . esc_attr( strip_tags( get_the_title( $post->post_parent ) ) ); ?>" rel="gallery"><?php echo get_the_title( $post->post_parent );?></a>.
 							<?php //show edit post link
 							edit_post_link( __( '(Edit)', 'cybergames' ), ' <span class="edit-link">', '</span>' ); ?>
 						</div><!-- post-cbg -->
 						<div class="cybergames-attachment">
-							<?php $attachments = array_values( get_children( array( 
+							<?php $attachments = array_values( get_children( array(
 								'post_mime_type' => 'image',
 								'post_status'	 => 'inherit',
 								'post_parent' 	 => $post->post_parent,
@@ -30,19 +34,20 @@ get_header(); ?>
 								'orderby'		 => 'menu_order ID',
 								'order'			 => 'ASC',
 							) ) );
-							foreach ( $attachments as $k => $attachment ) :
-								if ( $attachment->ID == $post->ID )
+							foreach ( $attachments as $k => $attachment ) {
+								if ( $attachment->ID == $post->ID ) {
 									break;
-							endforeach;
+								}
+							}
 							//go to next image by click on attachment
 							$k++;
 							//if there is more than 1 attachment in a gallery
 							if ( count( $attachments ) > 1 ) :
 								if ( isset( $attachments[ $k ] ) ) :
-								// get the url of the next image attachment
+									// get the url of the next image attachment
 									$next_attachment_url = get_attachment_link( $attachments[ $k ]->ID );
 								else :
-								// or get the url of the first image attachment
+									// or get the url of the first image attachment
 									$next_attachment_url = get_attachment_link( $attachments[0]->ID );
 								endif;
 							else :
@@ -63,4 +68,4 @@ get_header(); ?>
 		endif; ?>
 	</div><!-- .content -->
 <?php get_sidebar();
-get_footer(); ?>
+get_footer();

@@ -1,229 +1,220 @@
 # This file is distributed under the GNU General Public License v1.0 or later.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CyberGames\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 13:30+0300\n"
+"POT-Creation-Date: 2016-05-03 18:06+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <support@bestwebsoft.com>\n"
-"Language: \n"
+"Language: ru_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Russian\n"
-"X-Poedit-Country: UKRAINE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../tag.php:9
-msgid "Recording tag:"
-msgstr ""
+#: ../404.php:10 ../search.php:41
+#, fuzzy
+msgid "Nothing found..."
+msgstr "Ничего не найдено"
 
-#: ../tag.php:22
-#: ../page.php:15
-#: ../archive.php:35
-#: ../image.php:17
-#: ../index.php:28
-#: ../index.php:45
-#: ../search.php:22
-#: ../category.php:22
-#: ../single.php:19
+#: ../archive.php:18
+#, fuzzy, php-format
+msgid "Daily Archives: %s"
+msgstr "Архив за день: %s"
+
+#: ../archive.php:20
+#, fuzzy, php-format
+msgid "Monthly Archives: %s"
+msgstr "Архив за месяц: %s"
+
+#: ../archive.php:22
+#, fuzzy, php-format
+msgid "Yearly Archives: %s"
+msgstr "Архив за год: %s"
+
+#: ../archive.php:24
+#, fuzzy
+msgid "Archives"
+msgstr "Архивы"
+
+#: ../archive.php:37 ../category.php:23 ../image.php:18 ../index.php:29
+#: ../index.php:49 ../page.php:16 ../search.php:23 ../single.php:20
+#: ../tag.php:23
+#, fuzzy
 msgid "Posted on"
-msgstr ""
+msgstr "Опубликовано"
 
-#: ../tag.php:28
-#: ../page.php:20
-#: ../archive.php:40
-#: ../index.php:51
-#: ../category.php:27
-#: ../single.php:24
-msgid "Pages:"
-msgstr ""
-
-#: ../tag.php:31
-#: ../page.php:21
-#: ../archive.php:42
-#: ../index.php:56
-#: ../search.php:27
-#: ../category.php:29
-msgid "[Top]"
-msgstr ""
-
-#: ../tag.php:36
-#: ../archive.php:47
-#: ../index.php:62
-#: ../search.php:32
-#: ../category.php:34
-msgid "&larr; Older Posts"
-msgstr ""
-
-#: ../tag.php:37
-#: ../archive.php:48
-#: ../index.php:63
-#: ../search.php:33
-#: ../category.php:35
-msgid "Newer Posts &rarr;"
-msgstr ""
-
-#: ../page.php:16
-#: ../archive.php:36
-#: ../image.php:18
-#: ../index.php:29
-#: ../index.php:46
-#: ../search.php:23
-#: ../category.php:23
-#: ../single.php:20
+#: ../archive.php:39 ../category.php:25 ../image.php:20 ../index.php:31
+#: ../index.php:51 ../page.php:18 ../search.php:25 ../single.php:22
+#: ../tag.php:25
 msgid "in"
 msgstr ""
 
-#: ../archive.php:17
-#, php-format
-msgid "Daily Archives: %s"
+#: ../archive.php:45 ../category.php:31 ../index.php:58 ../page.php:24
+#: ../single.php:28 ../tag.php:32
+#, fuzzy
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ../archive.php:47 ../category.php:33 ../index.php:63 ../page.php:25
+#: ../search.php:31 ../tag.php:35
+msgid "[Top]"
 msgstr ""
 
-#: ../archive.php:19
-#, php-format
-msgid "Monthly Archives: %s"
+#: ../archive.php:52 ../category.php:38 ../index.php:69 ../search.php:36
+#: ../tag.php:40
+msgid "&larr; Older Posts"
 msgstr ""
 
-#: ../archive.php:21
-#, php-format
-msgid "Yearly Archives: %s"
+#: ../archive.php:53 ../category.php:39 ../index.php:70 ../search.php:37
+#: ../tag.php:41
+msgid "Newer Posts &rarr;"
 msgstr ""
 
-#: ../archive.php:23
-msgid "Archives"
+#: ../category.php:10
+#, fuzzy, php-format
+msgid "Category Archives: \"%s\""
+msgstr "Архив категорий: %s"
+
+#: ../comments.php:17
+msgid "One Thought on"
 msgstr ""
 
-#: ../footer.php:10
+#: ../comments.php:17
+msgid "thoughts on"
+msgstr ""
+
+#: ../comments.php:24
+#, fuzzy
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: ../comments.php:25
+#, fuzzy
+msgid "&larr; Older Comments"
+msgstr "&larr; Предыдущие Комментарии"
+
+#: ../comments.php:26
+#, fuzzy
+msgid "Newer Comments &rarr;"
+msgstr "Следующие комментарии &rarr;"
+
+#: ../comments.php:32
+#, fuzzy
+msgid "Comments are closed."
+msgstr "Комментарии запрещены."
+
+#: ../footer.php:11
+#, fuzzy
 msgid "Powered by"
-msgstr ""
+msgstr "Создано"
 
-#: ../footer.php:10
+#: ../footer.php:11
 msgid "and"
 msgstr ""
 
-#: ../image.php:20
-msgid "Return to"
-msgstr ""
-
-#: ../image.php:22
-#: ../functions.php:195
-msgid "(Edit)"
-msgstr ""
-
-#: ../image.php:55
-msgid "Next"
-msgstr ""
-
-#: ../image.php:56
-msgid "Previous"
-msgstr ""
-
-#: ../functions.php:60
+#: ../functions.php:62
+#, fuzzy
 msgid "Primary Menu"
-msgstr ""
+msgstr "Основное меню"
 
-#: ../functions.php:68
+#: ../functions.php:70
 msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
 msgstr ""
 
-#: ../functions.php:101
-#, php-format
-msgid "Page %s"
-msgstr ""
-
-#: ../functions.php:104
-msgid "Untitled"
-msgstr ""
-
-#: ../functions.php:195
+#: ../functions.php:191
+#, fuzzy
 msgid "Pingback:"
-msgstr ""
+msgstr "Pingback"
 
-#: ../functions.php:208
+#: ../functions.php:191 ../image.php:26
+#, fuzzy
+msgid "(Edit)"
+msgstr "Редактировать"
+
+#: ../functions.php:204
 msgid "Post author"
 msgstr ""
 
-#: ../functions.php:214
-#, php-format
+#: ../functions.php:210
+#, fuzzy, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s в %2$s"
 
-#: ../functions.php:218
+#: ../functions.php:215
+#, fuzzy
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Ваш комментарий ожидает модерации."
 
-#: ../functions.php:222
+#: ../functions.php:219
+#, fuzzy
 msgid "Edit"
-msgstr ""
+msgstr "Редактировать"
 
-#: ../functions.php:226
+#: ../functions.php:224
+#, fuzzy
 msgid "Reply"
-msgstr ""
+msgstr "Ответить"
 
 #: ../functions.php:241
 msgid "Slider Post"
 msgstr ""
 
 #: ../functions.php:249
+#, fuzzy
 msgid "Display this"
-msgstr ""
+msgstr "FAQ Помощь"
 
 #: ../functions.php:249
+#, fuzzy
 msgid "in slider"
+msgstr "Слайдер"
+
+#: ../functions.php:322
+#, fuzzy, php-format
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: ../functions.php:325
+msgid "Untitled"
 msgstr ""
 
-#: ../searchform.php:10
+#: ../image.php:24
+msgid "Return to"
+msgstr ""
+
+#: ../image.php:60
+#, fuzzy
+msgid "Next"
+msgstr "Следующий"
+
+#: ../image.php:61
+#, fuzzy
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: ../index.php:76
+#, fuzzy
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr "Извините, по вашему запросу ни чего не найдено. Может быть, попробовать поиск?"
+
+#: ../search.php:10
+#, fuzzy
+msgid "Search results:"
+msgstr "Результаты поиска для"
+
+#: ../searchform.php:11
 msgid "Enter search keyword"
 msgstr ""
 
-#: ../index.php:69
-msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
-msgstr ""
-
-#: ../search.php:9
-msgid "Search results:"
-msgstr ""
-
-#: ../search.php:25
-msgid "more"
-msgstr ""
-
-#: ../search.php:37
-#: ../404.php:9
-msgid "Nothing found..."
-msgstr ""
-
-#: ../category.php:9
-msgid "Category pages: "
-msgstr ""
-
-#: ../comments.php:15
-msgid "One Thought on"
-msgstr ""
-
-#: ../comments.php:15
-msgid "thoughts on"
-msgstr ""
-
-#: ../comments.php:23
-msgid "Comment navigation"
-msgstr ""
-
-#: ../comments.php:24
-msgid "&larr; Older Comments"
-msgstr ""
-
-#: ../comments.php:25
-msgid "Newer Comments &rarr;"
-msgstr ""
-
-#: ../comments.php:31
-msgid "Comments are closed."
-msgstr ""
-
+#: ../tag.php:10
+#, fuzzy, php-format
+msgid "Tag Archives: \"%s\""
+msgstr "Метки архива: %s"

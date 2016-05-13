@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  * The template Category pages
  *
  * @subpackage CyberGames
@@ -6,11 +7,11 @@
  */
 get_header(); ?>
 	<div class="content">
-		<h2 class="page-title"><?php single_cat_title( _e( 'Category pages: ', 'cybergames' ) ); ?></h2>
+		<h2 class="page-title"><?php printf( __( 'Category Archives: "%s"', 'cybergames' ), single_cat_title( '', false ) ); ?></h2>
 		<?php if ( have_posts() ) :
 			while ( have_posts() ) : the_post(); ?>
 				<div class="post">
-					<?php if ( has_post_thumbnail() ): /* post thumbnail */ ?>
+					<?php if ( has_post_thumbnail() ) : /* post thumbnail */ ?>
 						<div class="post-main"> 
 							<?php the_post_thumbnail( 'post-thumb' ); ?>
 							<p><?php echo get_post( get_post_thumbnail_id() )->post_excerpt; ?></p>
@@ -20,7 +21,10 @@ get_header(); ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<p class="category">
 							<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
-							<?php if ( has_category() ) printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' ); the_category( ', ' ); ?>
+							<?php if ( has_category() ) {
+								printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
+								the_category( ', ' );
+							} ?>
 						</p>
 						<?php the_content();
 						/* Place pagination if exist. */
@@ -38,4 +42,4 @@ get_header(); ?>
 		<?php endif; ?>
 	</div><!-- .content -->
 <?php get_sidebar();
-get_footer(); ?>
+get_footer();

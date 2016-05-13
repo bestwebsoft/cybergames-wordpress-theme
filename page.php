@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  *The template file pages.
  *
  * @subpackage CyberGames
@@ -13,7 +14,10 @@ get_header(); ?>
 						<h2><?php the_title(); ?></h2>
 						<p class="category" >
 							<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
-							<?php if ( has_category() ) printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' ); the_category( ', ' ); ?>
+							<?php if ( has_category() ) {
+								printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
+								the_category( ', ' );
+							} ?>
 						</p>
 						<?php the_content();
 						/* Place pagination if exist. */
@@ -28,8 +32,8 @@ get_header(); ?>
 					<div class="alignright" ><?php next_post_link( '%link', '%title &rarr;' ); ?></div>
 					<div class="clear"></div>
 				</div><!-- .pagination -->
-		<?php else:
+		<?php else :
 		endif; ?>
 	</div><!-- .content -->
-<?php get_sidebar(); 
-get_footer(); ?>
+<?php get_sidebar();
+get_footer();

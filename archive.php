@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  * The template Archive pages
  *
  * Used to display archive-type pages if nothing more specific matches a query.
@@ -13,17 +14,18 @@ get_header(); ?>
 		<?php if ( have_posts() ) :
 			while ( have_posts() ) : the_post(); ?>
 				<h2 class="page-title">
-					<?php if ( is_day() ) 
+					<?php if ( is_day() ) {
 						printf( __( 'Daily Archives: %s', 'cybergames' ), '<span>' . get_the_date() . '</span>' );
-					elseif ( is_month() ) 
+					} elseif ( is_month() ) {
 						printf( __( 'Monthly Archives: %s', 'cybergames' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
-					elseif ( is_year() ) 
+					} elseif ( is_year() ) {
 						printf( __( 'Yearly Archives: %s', 'cybergames' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
-					else 
-						_e( 'Archives', 'cybergames' ); ?>
+					} else {
+						_e( 'Archives', 'cybergames' );
+					} ?>
 				</h2><!-- .page-title -->
 				<div class="post">
-					<?php if ( has_post_thumbnail() ): /* post thumbnail */ ?>
+					<?php if ( has_post_thumbnail() ) : /* post thumbnail */ ?>
 						<div class="post-main"> 
 							<?php the_post_thumbnail( 'post-thumbnails' ); ?>
 							<p><?php echo get_post( get_post_thumbnail_id() )->post_excerpt; ?></p>
@@ -33,7 +35,10 @@ get_header(); ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<p class="category">
 							<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
-							<?php if ( has_category() ) printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' ); the_category( ', ' ); ?>
+							<?php if ( has_category() ) {
+								printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
+								the_category( ', ' );
+							} ?>
 						</p>
 						<?php the_content();
 						/* Place pagination if exist. */
@@ -51,4 +56,4 @@ get_header(); ?>
 		<?php endif; ?>
 	</div><!-- .content -->
 <?php get_sidebar();
-get_footer(); ?>
+get_footer();

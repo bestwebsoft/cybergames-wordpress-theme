@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  * The template searchform
  *
  * @subpackage CyberGames

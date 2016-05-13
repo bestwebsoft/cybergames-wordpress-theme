@@ -1,4 +1,5 @@
-<?php /**
+<?php
+/**
  * The sidebar containing the secondary widget area
  *
  * @subpackage CyberGames
@@ -6,7 +7,7 @@
  */
 ?>
 	<div class="sidebar">
-		<?php if ( !dynamic_sidebar( 'sidebar' ) ): ?>
+		<?php if ( ! dynamic_sidebar( 'sidebar' ) ) : ?>
 			<aside class="search">
 				<?php get_search_form(); ?>
 			</aside>
