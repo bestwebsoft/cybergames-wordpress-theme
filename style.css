@@ -1,15 +1,15 @@
 /*
 Theme Name: CyberGames
 Theme URI: http://bestweblayout.com/products/cybergames/
-Description: If you are in search for a simple and flexible theme that would bring out the message on your website we might have exactly what you are looking for! CyberGames is an unhackneyed, professional and user-friendly theme that will immerse users into the neoteric world of technological advancement. Thus, whether you are a gamer wishing to share your experience and give walkthrough tips, a programmer who wants to pass on knowledge, or a news reviewer searching for a theme that will create an adequate atmosphere for your ideas, CyberGames will be a superb solution! Also, this theme will be perfectly suitable for Movie and Video Games reviews, Technology news, Network Services, Transport Services, Photography, Event Information, Media News, as well as any other purpose of yours! Live demo: http://wp-demo-theme.bestweblayout.com/cybergames/
 Author URI: http://bestweblayout.com/
 Author: BestWebLayout
-Version: 2.1
+Description: If you are in search for a simple and flexible theme that would bring out the message on your website we might have exactly what you are looking for! CyberGames is an unhackneyed, professional and user-friendly theme that will immerse users into the neoteric world of technological advancement. Thus, whether you are a gamer wishing to share your experience and give walkthrough tips, a programmer who wants to pass on knowledge, or a news reviewer searching for a theme that will create an adequate atmosphere for your ideas, CyberGames will be a superb solution! Also, this theme will be perfectly suitable for Movie and Video Games reviews, Technology news, Network Services, Transport Services, Photography, Event Information, Media News, as well as any other purpose of yours! Live demo: http://wp-demo-theme.bestweblayout.com/cybergames/
+Version: 2.2
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-Tags: blue, white, two-columns, left-sidebar, fixed-layout, threaded-comments, sticky-post, translation-ready, microformats, custom-menu
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
 Text Domain: cybergames
-Theme CyberGames WordPress Theme, Copyright 2016 BestWebLayout.com
+CyberGames WordPress Theme, Copyright 2016 BestWebLayout.com
 Theme CyberGames is distributed under the terms of the GNU GPL
 
 /**fonts**/
@@ -1145,6 +1145,10 @@ section ol {
 
 #cntctfrmpr_contact_form .cbg-select-button {
 	clear: none;
+}
+
+.pagination {
+	width: 620px;
 }
 
 .post-cbg .pagination {

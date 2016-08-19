@@ -307,39 +307,6 @@ function cybergames_slider_template() {
 	wp_reset_postdata();
 }
 
-/* backwards compatibility title-tag */
-if ( ! function_exists( '_wp_render_title_tag' ) ) {
-	/* customize title */
-	function cybergames_wp_title( $title, $sep ) {
-		global $paged, $page;
-		if ( is_feed() ) {
-			return $title;
-		}
-		// add the site name.
-		$title .= get_bloginfo( 'name' );
-		// Add a page number if necessary.
-		if ( $paged >= 2 || $page >= 2 ) {
-			$title = "$title $sep " . sprintf( __( 'Page %s', 'cybergames' ), max( $paged, $page ) );
-		}
-		if ( '' == $title ) {
-			return __( 'Untitled', 'cybergames' );
-		} else {
-			return $title;
-		}
-	}
-
-	/* customize title add filter*/
-	add_filter( 'wp_title', 'cybergames_wp_title' );
-
-	/* render title in wp_head*/
-	function cybergames_render_title() { ?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<?php }
-
-	add_action( 'wp_head', 'cybergames_render_title' );
-}
-/* end backwards compatibility */
-
 /*hooks*/
 add_action( 'after_setup_theme', 'cybergames_setup' );
 add_action( 'widgets_init', 'cybergames_widgets_init' );

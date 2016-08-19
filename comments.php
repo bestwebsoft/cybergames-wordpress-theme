@@ -14,7 +14,7 @@ if ( post_password_required() ) {
 if ( have_comments() || comments_open() ) : ?>
 	<div id="comments" class="comments-area">
 		<h2 class="comments-title">
-			<?php printf( _n( __( 'One Thought on', 'cybergames' ) . '&ldquo;%2$s&rdquo;', '%1$s&nbsp;' . __( 'thoughts on', 'cybergames' ) . '&ldquo;%2$s&rdquo;', get_comments_number(), 'cybergames' ), number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' ); ?>
+			<?php printf( _n( 'One Thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'cybergames' ), number_format_i18n( get_comments_number() ), get_the_title() ); ?>
 		</h2>
 		<ol class="commentlist">
 			<?php wp_list_comments( array( 'callback' => 'cybergames_comment', 'style' => 'ol' ) ); ?>

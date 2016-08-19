@@ -3,7 +3,7 @@
  * The template for displaying 404 pages Nothing found...
  *
  * @subpackage CyberGames
- * @since CyberGames 1.4
+ * @since      CyberGames 1.4
  */
 get_header(); ?>
 		<div class="content">
@@ -17,5 +17,5 @@ get_header(); ?>
 			</div><!--.post-->
 		</div><!--content-->
 	<?php get_sidebar(); ?>
-	</div><!--content-main-->
+</div><!--content-main-->
 <?php get_footer();

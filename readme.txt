@@ -1,12 +1,14 @@
 === CyberGames ===
 Contributors: BestWebLayout, BestWebSoft
-Tags: gray, white, blue, right-sidebar, custom-background, sticky-post, custom-menu
-Requires at least: 3.7
-Tested up to: 4.5.1
-Stable tag: 2.1
+Author URI: http://bestweblayout.com/
+Donate link: http://bestwebsoft.com/donate/
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
+Requires at least: 4.2
+Tested up to: 4.6
+Stable tag: 2.2
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Theme CyberGames WordPress Theme, Copyright 2016 BestWebLayout.com
+CyberGames WordPress Theme, Copyright 2016 BestWebLayout.com
 Theme CyberGames is distributed under the terms of the GNU GPL
 
 == Description ==
@@ -74,11 +76,7 @@ The Theme includes a standard Widget.
 
 = How can I change language from English into Russian? =
 
-WordPress v4.0 and above:
 Change the language in the admin settings screen. Settings > General > Site Language.
-
-WordPress v3.9.2 and below:
-In the main catalog of your WordPress site, please find wp-config.php file, open it and change define( 'WPLANG', '' ); for define( 'WPLANG', 'ru_RU' );
 
 = How can I change the background color of the site? =
 
@@ -89,6 +87,9 @@ There is a background in the admin panel of your site, you can Change its color 
 1. Theme home page.
 
 == Changelog ==
+
+= V2.2 - 19.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
 
 = V2.1 - 03.05.2016 =
 * Update: Screenshot was updated to size 1200x900.
@@ -143,6 +144,9 @@ There is a background in the admin panel of your site, you can Change its color 
 * Release date of CyberGames Theme
 
 == Upgrade Notice ==
+
+= V2.2 =
+* The compatibility with new WordPress version updated.
 
 = V2.1 =
 Screenshot was updated to size 1200x900. screen-reader-text css class was added to style.css. All text strings are translatable. Fixed mismatch coding standards. BWS menu was removed from the admin menu. The theme has been tested for the compatibility with WordPress v.4.5.1.

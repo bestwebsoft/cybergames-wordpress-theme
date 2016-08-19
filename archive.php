@@ -14,15 +14,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) :
 			while ( have_posts() ) : the_post(); ?>
 				<h2 class="page-title">
-					<?php if ( is_day() ) {
-						printf( __( 'Daily Archives: %s', 'cybergames' ), '<span>' . get_the_date() . '</span>' );
-					} elseif ( is_month() ) {
-						printf( __( 'Monthly Archives: %s', 'cybergames' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
-					} elseif ( is_year() ) {
-						printf( __( 'Yearly Archives: %s', 'cybergames' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
-					} else {
-						_e( 'Archives', 'cybergames' );
-					} ?>
+					<?php the_archive_title() ?>
 				</h2><!-- .page-title -->
 				<div class="post">
 					<?php if ( has_post_thumbnail() ) : /* post thumbnail */ ?>
@@ -32,11 +24,11 @@ get_header(); ?>
 						</div><!-- .post-main -->
 					<?php endif; /* post thumbnail */ ?>
 					<div class="post-cbg"> 
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 						<p class="category">
-							<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
+							<?php echo __( 'Posted on', 'cybergames' ) . '&nbsp;'; ?><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date() ?></a>
 							<?php if ( has_category() ) {
-								printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
+								echo '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;';
 								the_category( ', ' );
 							} ?>
 						</p>

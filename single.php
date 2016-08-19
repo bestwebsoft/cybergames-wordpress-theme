@@ -17,9 +17,9 @@ get_header( ); ?>
 				<div class="post-cbg"> 
 					<h2><?php the_title(); ?></h2>
 					<p class="category">
-						<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
+						<?php echo __( 'Posted on', 'cybergames' ) . '&nbsp;'; ?><a href="<?php echo esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ); ?>"><?php echo get_the_date() ?></a>
 						<?php if ( has_category() ) {
-							printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
+							echo '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;';
 							the_category( ', ' );
 						} ?>
 					</p>

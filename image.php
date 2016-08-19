@@ -15,9 +15,9 @@ get_header(); ?>
 						<div class="post-cbg">
 							<?php $metadata = wp_get_attachment_metadata(); ?>
 							<p class="category" >
-								<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
+								<?php echo __( 'Posted on', 'cybergames' ) . '&nbsp;'; ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date() ?></a>
 								<?php if ( has_category() ) {
-									printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
+									echo '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;';
 									the_category( ', ' );
 								} ?>
 							</p>

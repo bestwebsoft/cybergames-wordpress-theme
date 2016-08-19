@@ -12,13 +12,7 @@ get_header(); ?>
 				<div class="post">
 					<div class="post-cbg"> 
 						<h2><?php the_title(); ?></h2>
-						<p class="category" >
-							<?php printf( __( 'Posted on', 'cybergames' ) . '&nbsp;' ) ?><a href="<?php the_permalink(); ?>"><?php echo get_the_date( 'j F, Y' ) ?></a>
-							<?php if ( has_category() ) {
-								printf( '&nbsp;' . __( 'in', 'cybergames' ) . '&nbsp;' );
-								the_category( ', ' );
-							} ?>
-						</p>
+						<p class="category"></p>
 						<?php the_content();
 						/* Place pagination if exist. */
 						wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cybergames' ), 'after' => '</div>' ) ); ?>
